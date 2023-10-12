@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
+    <div class="center-container">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Convertisseur Binaire-Décimal et Décimal-Binaire</title>
 </head>
@@ -44,6 +45,15 @@
             margin-bottom: 20px;
         }
     </style>
+    <style>
+        /* CSS for centering */
+        .center-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh; /* 100% viewport height */
+        }
+    </style>
 <body>
     <h1>Convertisseur Binaire-Décimal</h1>
     <form id="binaryToDecimalForm">
@@ -74,5 +84,6 @@
             binaryOutput.textContent = (parseInt(decimalInput)).toString(2);
         }
     </script>
+    </div>
 </body>
 </html>
