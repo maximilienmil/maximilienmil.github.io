@@ -1,10 +1,8 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <div class="center-container">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Convertisseur Binaire-Décimal et Décimal-Binaire</title>
-</head>
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -23,11 +21,6 @@
             text-align: center;
             margin-bottom: 20px;
         }
-        header img {
-            max-width: 150px;
-            border-radius: 50%;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
-        }
         h1 {
             font-size: 32px;
             margin-top: 10px;
@@ -44,31 +37,39 @@
         .section {
             margin-bottom: 20px;
         }
-        
         .center-container {
             display: flex;
             justify-content: center;
             align-items: center;
-            height: 100vh; /* 100% viewport height */
+            height: 100vh;
         }
     </style>
-
+</head>
 <body>
-    <h1>Convertisseur Binaire-Décimal</h1>
-    <form id="binaryToDecimalForm">
-        <label for="binaryInput">Entrez un nombre binaire :</label>
-        <input type="text" id="binaryInput" />
-        <input type="button" value="Convertir" onclick="convertBinaryToDecimal()" />
-        <p>Résultat : <span id="decimalOutput"></span></p>
-    </form>
+    <div class="center-container">
+        <div class="container">
+            <h1>Convertisseur Binaire-Décimal</h1>
 
-    <h1>Convertisseur Décimal-Binaire</h1>
-    <form id="decimalToBinaryForm">
-        <label for="decimalInput">Entrez un nombre décimal :</label>
-        <input type="number" id="decimalInput" />
-        <input type="button" value="Convertir" onclick="convertDecimalToBinary()" />
-        <p>Résultat : <span id="binaryOutput"></span></p>
-    </form>
+            <div class="section">
+                <form id="binaryToDecimalForm">
+                    <label for="binaryInput">Entrez un nombre binaire :</label>
+                    <input type="text" id="binaryInput" />
+                    <input type="button" value="Convertir" onclick="convertBinaryToDecimal()" />
+                    <p>Résultat : <span id="decimalOutput"></span></p>
+                </form>
+            </div>
+
+            <h2>Convertisseur Décimal-Binaire</h2>
+            <div class="section">
+                <form id="decimalToBinaryForm">
+                    <label for="decimalInput">Entrez un nombre décimal :</label>
+                    <input type="number" id="decimalInput" />
+                    <input type="button" value="Convertir" onclick="convertDecimalToBinary()" />
+                    <p>Résultat : <span id="binaryOutput"></span></p>
+                </form>
+            </div>
+        </div>
+    </div>
 
     <script>
         function convertBinaryToDecimal() {
@@ -83,6 +84,5 @@
             binaryOutput.textContent = (parseInt(decimalInput)).toString(2);
         }
     </script>
-    </div>
 </body>
 </html>
