@@ -1,4 +1,4 @@
-// script.js
+// convertisseurbinaire.js
 function convertBinaryToDecimal() {
     const binaryInput = document.getElementById('binaryInput').value;
     const decimalOutput = document.getElementById('decimalOutput');
