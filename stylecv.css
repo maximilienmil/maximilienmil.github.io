@@ -38,13 +38,12 @@ p {
     margin-bottom: 20px;
 }
 
-/* Updated styles for the horizontal navbar */
 .navbar {
     list-style: none;
     padding: 0;
     margin: 0;
     text-align: center;
-    background-color: #333; /* Background color for the navbar */
+    background-color: #333; 
 }
 
 .navbar li {
@@ -55,12 +54,12 @@ p {
 .navbar a {
     text-decoration: none;
     font-size: 18px;
-    color: #fff; /* Text color for the navbar links */
-    padding: 10px 20px; /* Add padding to the navbar links */
-    border-radius: 5px; /* Rounded corners for the links */
+    color: #fff; 
+    padding: 10px 20px; 
+    border-radius: 5px; 
 }
 
 .navbar a:hover {
-    background-color: #007bff; /* Background color on hover */
-    color: #fff; /* Text color on hover */
+    background-color: #007bff; 
+    color: #fff; 
 }
