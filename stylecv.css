@@ -45,28 +45,3 @@ p {
     margin-bottom: 20px;
 }
 
-.navbar {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    text-align: center;
-    background-color: #ffffff; 
-}
-
-.navbar li {
-    display: inline;
-    margin-right: 20px;
-}
-
-.navbar a {
-    text-decoration: none;
-    font-size: 18px;
-    color: #fff; 
-    padding: 10px 20px; 
-    border-radius: 5px; 
-}
-
-.navbar a:hover {
-    background-color: #007bff; 
-    color: #fff; 
-}
