@@ -7,7 +7,7 @@ body {
 }
 
 .container {
-    max-width: 800px;
+    max-width: 1200px;
     margin: 0 auto;
     padding: 20px;
     background-color: #fff;
@@ -50,7 +50,7 @@ p {
     padding: 0;
     margin: 0;
     text-align: center;
-    background-color: #333; 
+    background-color: #ffffff; 
 }
 
 .navbar li {
