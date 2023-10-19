@@ -11,9 +11,24 @@ body {
     right: 0;
     bottom: 0;
     z-index: -1;
-    color: green;
     font-size: 16px;
     font-family: "Courier New", monospace;
     user-select: none;
     pointer-events: none;
+    overflow: hidden;
+}
+
+.matrix {
+    position: absolute;
+    color: green;
+    animation: fall 10s linear infinite;
+}
+
+@keyframes fall {
+    0% {
+        transform: translateY(-100%);
+    }
+    100% {
+        transform: translateY(100vh);
+    }
 }
