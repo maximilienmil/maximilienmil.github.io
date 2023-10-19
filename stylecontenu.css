@@ -2,6 +2,11 @@ body {
     margin: 0;
     overflow: hidden;
     background-color: black;
+    color: green;
+    font-size: 16px;
+    font-family: "Courier New", monospace;
+    user-select: none;
+    cursor: default;
 }
 
 .matrix-container {
@@ -14,21 +19,20 @@ body {
     align-items: center;
     justify-content: center;
     z-index: -1;
+    overflow: hidden;
 }
 
 .matrix {
-    font-size: 16px;
-    color: green;
-    white-space: nowrap;
-    position: relative;
-    animation: float 5s linear infinite;
+    position: absolute;
+    bottom: 0;
+    animation: fall 4s linear infinite;
 }
 
-@keyframes float {
+@keyframes fall {
     0% {
-        transform: translateY(0);
+        transform: translateY(-100%);
     }
     100% {
-        transform: translateY(-100%);
+        transform: translateY(100%);
     }
 }
