@@ -48,6 +48,7 @@ p {
 .navbar {
     background-color: #f0f0f0; 
     border-radius: 10px; 
+    padding: 20px;
 }
 
 .navbar ul {
@@ -64,7 +65,7 @@ p {
 
 .navbar a {
     text-decoration: none;
-    font-size: 18px;
+    font-size: 20px;
     color: #333; 
 }
 
