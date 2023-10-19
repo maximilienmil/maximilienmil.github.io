@@ -3,11 +3,15 @@ const matrixContainer = document.querySelector('.matrix-container');
 function createMatrixCharacter() {
     const matrixCharacter = document.createElement('span');
     matrixCharacter.textContent = getRandomMatrixCharacter();
-    matrixCharacter.style.left = `${Math.random() * 100}%`;
+    matrixCharacter.style.left = `${getRandomNumber(0, 100)}%`;
+    matrixCharacter.style.animationDuration = `${getRandomNumber(5, 15)}s`;
+    matrixCharacter.style.animationDelay = `${getRandomNumber(0, 10)}s`;
+    matrixCharacter.style.fontSize = `${getRandomNumber(10, 30)}px`;
+    matrixCharacter.classList.add('matrix');
     matrixContainer.appendChild(matrixCharacter);
-    setTimeout(() => {
-        matrixCharacter.remove();
-    }, 4000);
+    matrixCharacter.addEventListener('animationiteration', () => {
+        matrixContainer.removeChild(matrixCharacter);
+    });
 }
 
 function getRandomMatrixCharacter() {
@@ -15,4 +19,8 @@ function getRandomMatrixCharacter() {
     return characters[Math.floor(Math.random() * characters.length)];
 }
 
-setInterval(createMatrixCharacter, 150);
+function getRandomNumber(min, max) {
+    return Math.random() * (max - min) + min;
+}
+
+setInterval(createMatrixCharacter, 100);

@@ -7,6 +7,7 @@ body {
     font-family: "Courier New", monospace;
     user-select: none;
     cursor: default;
+    position: relative;
 }
 
 .matrix-container {
@@ -24,15 +25,13 @@ body {
 
 .matrix {
     position: absolute;
-    bottom: 0;
-    animation: fall 4s linear infinite;
 }
 
 @keyframes fall {
     0% {
-        transform: translateY(-100%);
+        transform: translateY(0);
     }
     100% {
-        transform: translateY(100%);
+        transform: translateY(100vh);
     }
 }
