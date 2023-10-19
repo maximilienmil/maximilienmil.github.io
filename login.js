@@ -8,7 +8,7 @@ function login() {
     console.log("Entered password: " + password);
     console.log("Hashed password: " + hashedPassword);
 
-    if (hashedPassword === "8f434346648f6b96df89dda901c5176b10a6d83961dd3c1ac88b59b2dc327aa4") {
+    if (hashedPassword === "43faebc7da7c273da26c04c89ca659b181bfdfcd0015787d5713865ef43b5f2a") {
         window.location.href = "contenu.html";
     } else {
         alert("Incorrect password.");
