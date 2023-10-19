@@ -37,3 +37,26 @@ p {
 .section {
     margin-bottom: 20px;
 }
+
+/* Add styles for the navigation bar */
+.navbar {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+}
+
+.navbar li {
+    display: inline;
+    margin-right: 20px;
+}
+
+.navbar a {
+    text-decoration: none;
+    font-size: 18px;
+    color: #333;
+}
+
+.navbar a:hover {
+    color: #007bff; /* Change the color on hover */
+}
