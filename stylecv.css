@@ -38,12 +38,13 @@ p {
     margin-bottom: 20px;
 }
 
-/* Add styles for the navigation bar */
+/* Updated styles for the horizontal navbar */
 .navbar {
     list-style: none;
     padding: 0;
     margin: 0;
     text-align: center;
+    background-color: #333; /* Background color for the navbar */
 }
 
 .navbar li {
@@ -54,9 +55,12 @@ p {
 .navbar a {
     text-decoration: none;
     font-size: 18px;
-    color: #333;
+    color: #fff; /* Text color for the navbar links */
+    padding: 10px 20px; /* Add padding to the navbar links */
+    border-radius: 5px; /* Rounded corners for the links */
 }
 
 .navbar a:hover {
-    color: #007bff; /* Change the color on hover */
+    background-color: #007bff; /* Background color on hover */
+    color: #fff; /* Text color on hover */
 }
